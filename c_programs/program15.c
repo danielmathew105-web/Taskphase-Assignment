@@ -1,3 +1,4 @@
+//program to print nth term of fibonacci series
 #include <stdio.h>
 int fib(int n,int a,int b);//function prototype
 int main(){
