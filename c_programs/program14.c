@@ -1,3 +1,4 @@
+//program to print line,word,character count of a given string
 #include <stdio.h>
 int main(){
     FILE *f;
