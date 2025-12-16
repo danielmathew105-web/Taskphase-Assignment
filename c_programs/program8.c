@@ -1,5 +1,6 @@
 //Program to swap adjacent elements
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int n,i;
     int a[50],temp;
@@ -7,8 +8,10 @@ int main(){
     printf("Enter length of array:");
     scanf("%d",&n);
     printf("Enter elements:\n");
-    for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
+    for(i=0;i<n;i++){
+        if(scanf("%d",&a[i])!=1){
+            printf("Invalid type");
+            exit(0);    }       }
     printf("Original array=\n");
     for(i=0;i<n;i++)
         printf("%d\t",a[i]);
