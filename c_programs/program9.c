@@ -1,11 +1,16 @@
 //Program to input 4X4 matrix and find out sum of both diagonal elements and sum of all elements
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int a[10][10],i,j,sum=0,sum1=0,sum2=0;
-    printf("Enter elements:\n");
+    printf("Enter 4X4 matrix elements:\n");
     for(i=0;i<4;i++)
-        for(j=0;j<4;j++)
-            scanf("%d",&a[i][j]);
+        for(j=0;j<4;j++){
+            if(scanf("%d",&a[i][j])!=1){
+                printf("Invalid type");
+                exit(0);
+                                       }
+                        }
     for(i=0;i<4;i++)
         for(j=0;j<4;j++)
             sum+=a[i][j];
