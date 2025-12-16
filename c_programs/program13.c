@@ -4,7 +4,9 @@
 int main(){
     int n,i,j;
     printf("Enter no of rows:");
-    scanf("%d",&n);
+    if(scanf("%d",&n)!=1){
+        printf("Invalid type");
+        exit(0);         }
     if(n<1){
         printf("Enter number greater than 0");
         exit(0);
@@ -19,3 +21,4 @@ int main(){
     }
     return 0;
 }
+
