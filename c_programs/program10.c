@@ -1,38 +1,39 @@
 //Program to rotate a matrix by 90 degree
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
-    int a[10][10],i,j,temp;
-    printf("Enter elements:\n");
-    for(i=0;i<4;i++)
-        for(j=0;j<4;j++)
+    int a[50][50],b[50][50],i,j,r,c;
+    printf("Enter no of rows:");
+    scanf("%d",&r);
+    if(r<1){
+        printf("Enter number greater than 0");
+        exit(0);}
+    printf("Enter no of columns:");
+    scanf("%d",&c);
+    if(c<1){
+        printf("Enter number greater than 0");
+        exit(0);}
+                                
+    printf("Enter elements:\n");//inputting matrix
+    for(i=0;i<r;i++)
+        for(j=0;j<c;j++)
             scanf("%d",&a[i][j]);
-    //printing matrix
+                                //printing original matrix
     printf("Matrix=\n");
-    for(i=0;i<4;i++){
-        for(j=0;j<4;j++)
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++)
             printf("%d\t",a[i][j]);
             printf("\n");}
-    //transpose
-    for(i=0; i<4; i++){
-        for(j=i+1; j<4; j++){
-            temp = a[i][j];
-            a[i][j] = a[j][i];
-            a[j][i] = temp;
-                            }
-                      }
-    //reversing each row
-    for(i=0; i<4; i++){
-        for(j=0; j<2; j++){
-            temp = a[i][j];
-            a[i][j] = a[i][4-1-j];
-            a[i][4-1-j] = temp;
-                          }
-                      }
-                      
+                                 //rotating
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++)
+            b[j][r-i-1]=a[i][j];
+                    } 
+                                  //printing new matrix
     printf("New Matrix=\n");
-    for(i=0;i<4;i++){
-        for(j=0;j<4;j++)
-            printf("%d\t",a[i][j]);
+    for(i=0;i<c;i++){
+        for(j=0;j<r;j++)
+            printf("%d\t",b[i][j]);
             printf("\n");}                   
     
     return 0;
