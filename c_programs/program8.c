@@ -3,7 +3,7 @@
 #include <stdlib.h>
 int main(){
     int n,i;
-    int a[50],temp;
+    int a[10000],temp;
     int *p=a;
     printf("Enter length of array:");
     scanf("%d",&n);
