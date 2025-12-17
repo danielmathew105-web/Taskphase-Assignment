@@ -10,7 +10,7 @@ int main(){
         printf("Enter a postive number");
         exit(0);
            }
-    printf("%dth term of the fibonacci series=%d",n,fib(n-1,0,1));
+    printf("%dth term of the fibonacci series starting from 0 = %d",n,fib(n-1,0,1));
     return 0;
           }
 int fib(int x,int a,int b){//defining function
