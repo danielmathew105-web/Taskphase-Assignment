@@ -1,4 +1,4 @@
-//Program to implement bubble sort and binary search
+//Program to implement bubble sort/selection sort and binary search
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -7,8 +7,10 @@ int main() {
     printf("Enter the number of elements: ");
     scanf("%d",&n);
     printf("Enter %d elements:\n",n);
-    for (i=0;i<n;i++)
-        scanf("%d",&a[i]);
+    for (i=0;i<n;i++){
+        if(scanf("%d",&a[i])!=1){
+            printf("Invalid input");
+            exit(0);            }}
     
     printf("Enter 1.Bubble Sort or 2.Selection Sort: ");
     scanf("%d",&c);
