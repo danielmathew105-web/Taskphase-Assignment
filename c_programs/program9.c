@@ -11,21 +11,24 @@ int main(){
                 exit(0);
                                        }
                         }
-    for(i=0;i<4;i++)
+    for(i=0;i<4;i++)    //sum of elements
         for(j=0;j<4;j++)
             sum+=a[i][j];
-    printf("Matrix=\n");
+    
+    printf("Matrix=\n");    //printing original matrix
     for(i=0;i<4;i++){
         for(j=0;j<4;j++)
             printf("%d\t",a[i][j]);
             printf("\n");}
-    printf("Sum of elements=%d\n",sum);
-    for(i=0;i<4;i++)
+    
+    printf("Sum of elements=%d\n",sum);    //printing sum of elements
+    
+    for(i=0;i<4;i++)        //sum of first diagonal elements
         for(j=0;j<4;j++){
             if(i==j)
                 sum1+=a[i][j];
                         }
-    for(i=0;i<4;i++)
+    for(i=0;i<4;i++)        //sum of second diagonal elements
         sum2+=a[i][4-i-1];
     printf("Sum of first diagonal=%d\n",sum1);
     printf("Sum of second diagonal=%d\n",sum2);
