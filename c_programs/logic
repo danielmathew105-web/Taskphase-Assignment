@@ -1,0 +1,17 @@
+1. Checking if the sum of 3 integers is prime/composite and odd/even.
+2. Converting user inputted seconds to hours, minutes and seconds.
+3. Calculating electricity bill by giving specified ranges for units and prices corrospondng to them.
+4. Login system with user entering a password and getting 3 attempts to confirm it.
+5. Deleting duplicates from a given array.
+6. Counting no of vowels,consonants in a given string and to scramble the string randomly using rand.
+7. Finding out the second largest element by comparing elements sequentially in a user inputted array.
+8. Swapping adjacent elements in a user inputted array.
+9. Inputting a 4X4 matrix and finding out sum of all the elements and sum of both diagonals.
+10.Rotating a user-inputted matrix by 90 degrees clockwise by implementing nested loops to traverse rows and columns.
+11.To give a choice to the user to use selection or bubble sort to sort a user-inputted array and to search for a given element.
+12.Finding out the product with largest quantity and largest price by searching in a structure containing product id, price, 
+   quantity and product name.
+13.Program to print a equilateral triangle of stars by asking the user for the no of rows of stars.
+14.Program to get the word count, character count and line count by reading an already existing file and printing those.
+15.Program to print the nth term of the fibonacci series by implementing a recursive function fib(), where n is inputted by the user.
+16.Program implementing recursive function to compress a string to print the character and its count.
