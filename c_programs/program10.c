@@ -16,8 +16,10 @@ int main(){
                                 
     printf("Enter elements:\n");//inputting matrix
     for(i=0;i<r;i++)
-        for(j=0;j<c;j++)
-            scanf("%d",&a[i][j]);
+        for(j=0;j<c;j++){
+            if(scanf("%d",&a[i][j])!=1){
+                printf("Invalid input");
+                exit(0);}}
                                 //printing original matrix
     printf("Matrix=\n");
     for(i=0;i<r;i++){
