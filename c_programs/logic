@@ -1,17 +1,50 @@
-1. Checking if the sum of 3 integers is prime/composite and odd/even.
-2. Converting user inputted seconds to hours, minutes and seconds.
-3. Calculating electricity bill by giving specified ranges for units and prices corrospondng to them.
-4. Login system with user entering a password and getting 3 attempts to confirm it.
-5. Deleting duplicates from a given array.
-6. Counting no of vowels,consonants in a given string and to scramble the string randomly using rand.
-7. Finding out the second largest element by comparing elements sequentially in a user inputted array.
-8. Swapping adjacent elements in a user inputted array.
-9. Inputting a 4X4 matrix and finding out sum of all the elements and sum of both diagonals.
-10.Rotating a user-inputted matrix by 90 degrees clockwise by implementing nested loops to traverse rows and columns.
-11.To give a choice to the user to use selection or bubble sort to sort a user-inputted array and to search for a given element.
-12.Finding out the product with largest quantity and largest price by searching in a structure containing product id, price, 
-   quantity and product name.
-13.Program to print a equilateral triangle of stars by asking the user for the no of rows of stars.
-14.Program to get the word count, character count and line count by reading an already existing file and printing those.
-15.Program to print the nth term of the fibonacci series by implementing a recursive function fib(), where n is inputted by the user.
-16.Program implementing recursive function to compress a string to print the character and its count.
+1. The program adds three user-entered numbers and first determines the nature of the sum as even or odd. 
+   It then checks the sum to decide whether it is a prime number, a composite number, or neither.
+
+2. The program accepts a total number of seconds from the user and converts it into hours, minutes, and seconds. 
+   It calculates each time component step by step and displays the result in hours–minutes–seconds format.
+
+3. The program reads the number of electricity units consumed and calculates the total bill amount based on predefined rate slabs. 
+   It applies different charges for each range of units and displays the final cost.
+
+4. The program stores a user-defined password and allows the user up to three attempts to re-enter it correctly. 
+   If the password matches within three tries, access is granted; otherwise, the program exits after three failed attempts.
+
+5. The program reads an array of integers and removes duplicate elements by comparing each element with the rest of the array. 
+   When a duplicate is found, the elements are shifted to maintain continuity and the final array without duplicates is displayed.
+
+6. The program reads a string, counts the number of vowels and consonants by examining only alphabetic characters, and displays the count. 
+   It then scrambles the string by implementing the random number generator using srand(time(NULL)) and randomly swapping characters using 
+   rand() to produce a shuffled output.
+
+7. The program reads an array of integers and uses a pointer to traverse the array while tracking the largest and second largest values. 
+   It updates these values by comparing each element and ensures duplicate values do not affect the result before displaying the second 
+   largest element.
+
+8. The program reads an array of integers and uses a pointer to access and swap adjacent elements in the array. It traverses the array 
+   in steps of two, exchanges each pair of elements, and displays the modified array.
+
+9. The program accepts a 4×4 matrix from the user and calculates the sum of all its elements. It then separately computes the sums 
+   of the principal diagonal and the secondary diagonal and displays the results.
+
+10.The program accepts a matrix from the user and displays it in its original form. It then rotates the matrix by 90 degrees clockwise 
+   by rearranging elements into a new matrix and prints the rotated result.
+
+11.The program accepts a set of integers and sorts them using either bubble sort or selection sort based on the user’s choice. After 
+   sorting, it performs a binary search on the sorted array to locate a given element and displays the result.
+
+12.The program uses a structure to store product details such as ID, quantity, name, and price, while ensuring that each product ID is 
+   unique. It calculates the total cost of all products and identifies the products with the maximum quantity and maximum price, 
+   displaying their details.
+
+13.The program accepts the number of rows and prints a triangle pattern using nested loops. One loop handles spacing while
+   the other prints stars to form the triangular shape.
+
+14.The program opens a text file and reads it character by character to count characters, words, and lines. 
+   It identifies words by detecting transitions from separators to non-separator characters and displays the final counts.
+
+15.The program calculates the nth term of the Fibonacci series using a recursive function. It generates each term by passing 
+   the previous two values as parameters until the required term is reached.
+
+16.The program uses a recursive function to process a string and compress it by counting repeated characters. It skips separators 
+   and previously processed characters, then prints each character along with its frequency if it occurs more than once.
