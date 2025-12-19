@@ -1,4 +1,4 @@
-//Program to rotate a matrix by 90 degree
+//Program to rotate a matrix by 90 degree clockwise
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
